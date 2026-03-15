@@ -1,6 +1,6 @@
 # Todo.txt MCP Server
 
-A Model Context Protocol (MCP) server for managing todo.txt files, enabling AI assistants to interact with your tasks using the standardized todo.txt format.
+A minimal MCP for managing todo.txt files, enabling AI assistants to interact with your tasks using the standardized todo.txt format.
 
 ## Features
 
