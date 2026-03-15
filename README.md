@@ -18,8 +18,8 @@ Add to your MCP client configuration:
 {
     "mcpServers": {
         "todotxt": {
-            "command": "node",
-            "args": ["/path/to/todotxt-mcp/dist/index.js"]
+            "command": "npx",
+            "args": ["-y", "todotxt-mcp"],
         }
     }
 }

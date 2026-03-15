@@ -1,9 +1,11 @@
 {
     "name": "todotxt-mcp",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A minimal MCP for managing todo.txt files",
     "keywords": [
-        "mcp"
+        "mcp",
+        "todo.txt",
+        "task-management"
     ],
     "homepage": "https://github.com/rom100main/todotxt-mcp#readme",
     "bugs": {
@@ -42,6 +44,9 @@
     "files": [
         "dist/**/*"
     ],
+    "bin": {
+        "todotxt-mcp": "./dist/index.js"
+    },
     "dependencies": {
         "@modelcontextprotocol/sdk": "^1.0.0",
         "txtodo": "^1.0.0",
