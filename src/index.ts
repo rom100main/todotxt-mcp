@@ -140,11 +140,14 @@ server.registerTool(
             };
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
+            const userMessage = errorMessage.includes("Index out of bounds")
+                ? `Invalid task number: ${errorMessage}`
+                : `Error completing tasks: ${errorMessage}`;
             return {
                 content: [
                     {
                         type: "text",
-                        text: `Error completing tasks: ${errorMessage}`,
+                        text: userMessage,
                     },
                 ],
                 isError: true,
@@ -206,11 +209,14 @@ server.registerTool(
             }
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
+            const userMessage = errorMessage.includes("Index out of bounds")
+                ? `Invalid task number: ${errorMessage}`
+                : `Error removing tasks: ${errorMessage}`;
             return {
                 content: [
                     {
                         type: "text",
-                        text: `Error removing tasks: ${errorMessage}`,
+                        text: userMessage,
                     },
                 ],
                 isError: true,
@@ -245,11 +251,14 @@ server.registerTool(
             };
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
+            const userMessage = errorMessage.includes("Index out of bounds")
+                ? `Invalid task number: ${errorMessage}`
+                : `Error updating task: ${errorMessage}`;
             return {
                 content: [
                     {
                         type: "text",
-                        text: `Error updating task: ${errorMessage}`,
+                        text: userMessage,
                     },
                 ],
                 isError: true,

@@ -247,6 +247,8 @@ describe("TodoTxt MCP Server Tools", () => {
             });
 
             expect(result.result.isError).toBe(true);
+            expect(result.result.content[0].text).toContain("Invalid task number");
+            expect(result.result.content[0].text).toContain("Index out of bounds");
         });
     });
 
@@ -326,6 +328,7 @@ describe("TodoTxt MCP Server Tools", () => {
             });
 
             expect(result.result.isError).toBe(true);
+            expect(result.result.content[0].text as string).toContain("No task numbers specified");
         });
     });
 
@@ -362,6 +365,7 @@ describe("TodoTxt MCP Server Tools", () => {
             });
 
             expect(result.result.isError).toBe(true);
+            expect(result.result.content[0].text as string).toContain("Invalid task number");
             expect(result.result.content[0].text as string).toContain("Index out of bounds");
         });
 
