@@ -19,7 +19,7 @@ Add to your MCP client configuration:
     "mcpServers": {
         "todotxt": {
             "command": "npx",
-            "args": ["-y", "todotxt-mcp"],
+            "args": ["-y", "todotxt-mcp@latest"],
         }
     }
 }

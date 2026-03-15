@@ -1,6 +1,6 @@
 {
     "name": "todotxt-mcp",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A minimal MCP for managing todo.txt files",
     "keywords": [
         "mcp",
