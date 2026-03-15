@@ -7,4 +7,6 @@ module.exports = {
         "^.+\\.ts$": "ts-jest",
     },
     collectCoverageFrom: ["src/**/*.ts", "!src/**/*.d.ts"],
+    forceExit: true,
+    detectOpenHandles: true,
 };

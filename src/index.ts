@@ -6,7 +6,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { TodoTxt } from "txtodo";
 import * as z from "zod";
 
-const server = new McpServer({
+export const server = new McpServer({
     name: "todotxt-mcp",
     version: "0.1.0",
 });

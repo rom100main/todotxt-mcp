@@ -21,8 +21,8 @@
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
     },
     "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist", "test", "**/*.test.ts"]
+    "exclude": ["node_modules", "dist", "test", "**/*.test.ts", "temp"],
 }
